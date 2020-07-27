@@ -11,6 +11,7 @@
     <groupId>io.github.eugenezakhno</groupId>
     <artifactId>java-blog</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>java-blog</name>
     <description>Demo project for Spring Boot</description>
 
