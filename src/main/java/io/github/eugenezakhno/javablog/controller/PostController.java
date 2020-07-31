@@ -12,10 +12,6 @@ public class PostController {
         return "hello";
     }
 
-    @GetMapping("/main")
-    public String main (){
-        return "main";
-    }
 
 
 

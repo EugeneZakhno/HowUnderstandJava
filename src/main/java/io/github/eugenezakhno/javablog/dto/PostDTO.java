@@ -11,13 +11,10 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class PostDTO implements Serializable {
-    private Long id;
+
+public class PostDTO {
+
     private String title;
     private String body;
-    private String img;
-    private MultipartFile imageFile;
+
 }
