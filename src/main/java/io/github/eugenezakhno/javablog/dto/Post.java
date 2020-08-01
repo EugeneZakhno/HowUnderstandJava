@@ -10,9 +10,9 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-@Data
-
-public class PostDTO {
+@Data // adding getters and setters
+@Builder  // adding pattern Builder
+public class Post {
 
     private String title;
     private String body;
