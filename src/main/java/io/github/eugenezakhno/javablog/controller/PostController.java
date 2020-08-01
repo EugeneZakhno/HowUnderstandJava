@@ -11,8 +11,4 @@ public class PostController {
     public String hello (){
         return "hello";
     }
-
-
-
-
 }
