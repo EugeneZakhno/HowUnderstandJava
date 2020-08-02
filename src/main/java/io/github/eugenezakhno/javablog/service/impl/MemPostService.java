@@ -9,7 +9,21 @@ import java.util.List;
 
 public class MemPostService implements PostService {
 
-    private List<Post> posts = new ArrayList<>(Arrays.asList());
+    private List<Post> posts = new ArrayList<Post>(Arrays.asList(
+            Post.builder()
+                .title("First title")
+                .body("First body")
+                .build(),
+            Post.builder()
+                .title("Second title")
+                .body("Second body")
+                .build(),
+            Post.builder()
+                .title("Third title")
+                .body("Third body")
+                .build()
+        )
+    );
 
     @Override
     public List<Post> search() {
