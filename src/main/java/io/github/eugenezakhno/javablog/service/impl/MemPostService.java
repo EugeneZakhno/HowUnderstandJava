@@ -2,11 +2,13 @@ package io.github.eugenezakhno.javablog.service.impl;
 
 import io.github.eugenezakhno.javablog.dto.Post;
 import io.github.eugenezakhno.javablog.service.api.PostService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class MemPostService implements PostService {
 
     private List<Post> posts = new ArrayList<Post>(Arrays.asList(
@@ -27,6 +29,6 @@ public class MemPostService implements PostService {
 
     @Override
     public List<Post> search() {
-        return null;
+        return posts;
     }
 }
